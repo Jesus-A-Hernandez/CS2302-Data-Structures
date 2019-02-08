@@ -1,1 +1,1 @@
-# CS2302---Data-Structures
+# CS2302 - Data Structures
