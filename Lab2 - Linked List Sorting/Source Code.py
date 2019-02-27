@@ -241,6 +241,26 @@ def split(head):
             i = i.next
         
         return lastSwap
+    
+"""
+Median -----------------------------------------------------------------------
+Finds the item at the middle point of the list, this method is called after
+the list is sorted by the user selected method.
+"""
+def middlePointItem(L):
+    midItem = 0
+    if L.head == None or L.head.next == None:
+        midItem = L.head.item
+    else:
+        slow = L.head
+        fast = L.head.next
+        while fast != None:
+            fast = fast.next
+            if fast != None:
+                fast = fast.next
+                slow = slow.next
+        midItem = slow.item
+    return midItem
 
 """
 Main -------------------------------------------------------------------------
@@ -277,3 +297,5 @@ if n == 3:
     L.head = quickSort(L.head)
 print("Sorted List: ", end='')
 Print(L)
+
+print("Median = ", middlePointItem(L))
