@@ -1,4 +1,4 @@
-git commit --amend --date "Sun, 28 Apr 2019 11:20:05"
+$ git commit --amend --date "Sun, 28 Apr 2019 11:20:05"
 """
 CS2303 - Data Structures
 Jesus A. Hernandez - 80629917
